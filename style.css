@@ -1,0 +1,184 @@
+/* START */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  text-rendering: optimizeSpeed;
+
+  color: hsl(229, 23%, 23%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: -50% 230%, 140% -200%;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* START */
+
+/* CONTAINER */
+.container {
+  max-width: calc(400rem / 16);
+
+  background-color: #fff;
+
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* CARD AND AVATAR */
+.pattern-card {
+  position: relative;
+
+  margin-bottom: calc(74rem / 16);
+
+  width: 100%;
+}
+.svg {
+  display: block;
+}
+
+.victor {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  border: 5px solid #fff;
+
+  display: block;
+}
+
+/* TEXT */
+.text {
+  text-align: center;
+}
+
+.name-flex {
+  margin-bottom: calc(12rem / 16);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(10rem / 16);
+}
+
+.name {
+  font-size: calc(18rem / 16);
+  font-weight: 700;
+}
+
+.name-flex span {
+  font-weight: 500;
+
+  color: hsl(0, 0%, 59%);
+
+  display: inline-block;
+}
+
+.location {
+  margin-bottom: calc(24rem / 16);
+
+  font-size: calc(14rem / 16);
+
+  color: hsl(0, 0%, 59%);
+}
+
+.line {
+  border: 0.5px solid hsla(0, 0%, 59%, 0.278);
+}
+
+/* GRID */
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.user-info {
+  padding: calc(24rem / 16);
+
+  font-weight: 700;
+}
+
+.user-info p:first-child {
+  font-size: calc(18rem / 16);
+}
+
+.user-info p:last-child {
+  font-size: calc(10rem / 16);
+  font-weight: 400;
+
+  letter-spacing: 1.6px;
+
+  color: hsl(0, 0%, 59%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8rem / 16);
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
